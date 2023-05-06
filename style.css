@@ -38,19 +38,21 @@ body{
     border-radius:5px ;
     width: 55vw;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 27px;
     margin-left: 50px;
     align-items: center;
 }
 #search{
     width: 52vw;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     border: #fff;
     border-radius: 5px;
     height: 15px;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 .lupa{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius:5px;
 }
