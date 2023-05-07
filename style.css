@@ -1,7 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -16,7 +13,9 @@ header {
     color: #fff;
     text-align: center;
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    
+    
 }
 
 nav {
@@ -29,30 +28,126 @@ body{
 .logo {
     width: 90px;
     height: 90px;
-    margin-left: 20px;
+    margin-left: 27px;
+    margin-top: 6px;
 }
 #Buscar{
     display: flex;
     flex-wrap: nowrap;
     background-color: #fff;
     border-radius:5px ;
-    width: 55vw;
-    height: 35px;
+    width: 70vw;
+    height: 48px;
     margin-top: 27px;
-    margin-left: 50px;
+    margin-left: 60px;
     align-items: center;
 }
 #search{
-    width: 52vw;
+    width: 60vw;
     margin-bottom: 20px;
     border: #fff;
     border-radius: 5px;
-    height: 15px;
+    height: 20px;
     margin-right: 2%;
-    margin-top: 2%;
+    margin-top: 19px;
 }
 .lupa{
     width: 25px;
     height: 25px;
     border-radius:5px;
+    margin-left: 115px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#menu-h{
+    align-items: center;
+
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    list-style: none;
+    margin: 5 auto;
+    justify-content: center;
+    margin-inline-start: 135%;
+}
+
+#menu-h li {
+    margin: 0 10px;
+}
+
+#menu-h a {
+    color: #000000;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 20%;
+  
+   
+}
+
+#menu-h ul li a:hover {
+    background-color: #026937;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: #f2f2f1;
+    border-radius: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+   
+}
+#carrinho{
+    height: 55px;
+    width: 55px;
+    margin-top: 27px;
+    margin-left: 43px;
+}
+.carro{
+    width: 100vw;
+    height: 500px;
+    border-bottom: #000000;
+}
+
+hr{
+    margin-top: 20px;
+    margin-left: 15;
+}
+h1{
+    margin-top: 80px;
+    margin-left:20px ;
+}
+.centro a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.camisa{
+    width: 500px;
+    height: 500px;
+    margin-right: 45px;
+}
+.copo{
+    margin-right: 45px;
+}
+.caneca{
+    margin-left: 45px;
+}
+#produtos{
+    display: flex;
 }
