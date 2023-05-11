@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <div class="container">
     <header>
@@ -26,15 +25,21 @@
 
       <img src="carrinho.png" id="carrinho" alt="Carrinho de Compras">
 
+      <div id="Login">
+      <a href="">
+            <img src="cadastro-branco.png" class="pessoa" alt="Pessoa do Login">
+      </a>
+      </div>
+
     </header>
     <div class="flex-container">
 
-      <body>
+    
         <nav id="menu-h">
           <ul class="centro">
-            <li><a href="h">BLOG</a></li>
+            <li><a href="#">BLOG</a></li>
 
-            <li><a href="s">PROMOÇÃO</a></li>
+            <li><a href="#">PROMOÇÃO</a></li>
 
             <li><a href="#">NOTÍCIAS</a></li>
 
@@ -43,9 +48,10 @@
             <li><a href="#">CONHEÇA</a></li>
           </ul>
         </nav>
-    </div>
+    
   </div>
-  <div id="carro">
+  <main>
+  <div id="carro" class="flex-grow">
     <a
       href="https://yt3.googleusercontent.com/MEMWFIv7wzSiaWoZPgwUIEYBVR5DWRed0ttkRcvsOfSJvbljMXZCyLIWZwEzgBKrBrN22_iMGdc=s900-c-k-c0x00ffffff-no-rj">
       <img src="carro.png" class="carro" alt="imagem do carro do ifeco">
@@ -54,14 +60,28 @@
   <h1> Produtos
     <hr>
   </h1>
-
-  <div id="produtos">
-     <img src="camisa.png" class="camisa" alt="camisa"> 
-     <img src="caneca.png" class="caneca" alt="caneca">
-     <img src="copo.png"   class="copo" alt="copo">
-     <img src="serguei.jpg" class="erguei" alt="serguei">
-    
+  <div class="product">
+     <img src="camisa.png" alt="camisa"> 
+     <h3> Camisa - IFECO</h3>
+      <p>R$ 50,00</p>
   </div>
+  <div class="product">
+    <img src="caneca.png" alt="caneca"> 
+    <h3> Caneca - IFECO</h3>
+     <p>R$ 35,00</p>
+ </div>
+ <div class="product">
+  <img src="caneta.png" alt="camisa"> 
+  <h3> Caneta - IFECO</h3>
+   <p>R$ 2,50</p>
+</div>
+<div class="product">
+  <img src="copo.png" alt="camisa"> 
+  <h3> Copo - IFECO</h3>
+   <p>R$ 5,50</p>
+  </main>
+</div>
+</div>
 </body>
 
 </html>
