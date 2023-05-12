@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Sobre - IFECO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #026937;
-            color: #fff;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        section h2 {
-            color: #333;
-        }
-
-        footer {
-            background-color: #026937;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: "Red Hat Display", sans-serif;
-            text-align: center;
-        }
-
-        .ifeco {
-            width: 140px;
-            height: auto;
-            padding: 0%;
-            margin: auto;
-            display: block;
-        }
-
-        @media screen and (max-width: 768px) {
-            .ifeco {
-                margin: auto;
-            }
-        }
-
-        section {
-            text-align: center;
-        }
-
-        footer {
-            margin: auto;
-        }
-
-        hr {
-            width: 50%;
-            height: auto;
-        }
-
-        h2 {
-            font-family: "Red Hat Display", sans-serif;
-        }
-
-        h2 p {
-            font-family: 'Roboto', sans-serif;
-        }
-
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+      header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #026937;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 27px;
+    margin-top: 6px;
+  }
+  #Buscar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 48px;
+    margin-top: 27px;
+    margin-left: 60px;
+    align-items: center;
+    width: 50vw;
+  }
+  #search {
+    margin-bottom: 20px;
+    border: #fff;
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 1%;
+    margin-top: 20px;
+    width: 60vw;
+  }
+  .lupa {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 115px;
+  }
     </style>
-</head>
+  </head>
 
-<body>
-    <header>
-        <a href="index.html">
-            <img src="logobranca.png" class="ifeco" alt="Logo da IFECO">
-        </a>
-        <hr>
-    </header>
+  <body>
+      <div class="container">
+        <header>
+          <a
+            href="index.html">
+            <img src="img/logobranca.png" class="logo" alt="Logo da IFECO Branca" />
+          </a>
+          <div id="Buscar">
+            <input type="text" id="search" placeholder="      O que você procura?">
+            <img src="img/lupa.png" class="lupa" alt="Lupa de Pesquisa" />
+          </div>
+    
+          <img src="img/carrinho.png" id="carrinho" alt="Carrinho de Compras">
+    
+          <div id="Login">
+          <a href="login.html">
+                <img src="img/cadastro-branco.png" class="pessoa" alt="Pessoa do Login"><p>Entrar</p>
+                
+          </a>
+          </div>
+    
+        </header>
     <main>
-        <section>
-            <h2>QUEM SOMOS</h2>
-            <p>Somos uma equipe de eficiência energética do IFRS aqui de Rio Grande.</p>
-            <img src="">
-        </section>
-        <section>
-            <h2>Nossa Missão</h2>
-            <p>Nossa missão é melhorar a vida das pessoas através da tecnologia.</p>
-        </section>
-        <section>
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato conosco pelo email: exemplo@example.com</p>
-        </section>
+      <section>
+        <h2>QUEM SOMOS</h2>
+        <p>
+          Somos uma equipe de eficiência energética do IFRS aqui de Rio Grande.
+        </p>
+        <img
+          src="img/equipeifeco.png"
+          alt="Equipe da IFECO"
+          class="equipeifeco"
+        />
+      </section>
+      <br />
+      <br />
+      <section>
+        <h2>NOSSA MISSÃO</h2>
+        <p>Nossa missão é melhorar a vida das pessoas através da tecnologia.</p>
+      </section>
+      <br />
+      <br />
+      <section>
+        <h2>CONTATO</h2>
+        <p>
+          Você pode entrar em contato conosco pelo email: equipeifeco@gmail.com ou pelas nossas redes sociais: @ifeco.ifrs
+        </p>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2023 IFECO. Todos os direitos reservados.</p>
+      <p>Entre em contato:</p>
+      <p><i class="fa fa-envelope"></i> equipeifeco@gmail.com</p>
+      <p><i class="fa fa-phone"></i> (53) 99129-1699</p>
+      <p>
+        <i class="fa fa-map-marker"></i> Av. Alfredo Huch, 475, Pavilhão 11,
+        Sala 1121 (Rio Grande - RS)
+      </p>
+      <p>
+        <a href="https://www.facebook.com/ifeco.ifrs/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/ifeco.ifrs/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <br />
+        <br />
+      </p>
+      <p>&copy; 2023 IFECO. Todos os direitos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>
