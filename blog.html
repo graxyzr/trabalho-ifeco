@@ -1,106 +1,231 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Blog - IFECO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
+      header {
+        background-color: #026937;
+        color: #fff;
+        padding: 20px;
+      }
 
-        header h1 {
-            margin: 0;
-        }
+      header h1 {
+        margin: 0;
+      }
 
-        nav ul {
-            list-style-type: none;
-            margin: 4px;
-            padding: 0;
-            text-align: center;
-        }
+      nav ul {
+        list-style-type: none;
+        margin: 4px;
+        padding: 0;
+        text-align: center;
+      }
 
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
 
-        #content {
-            margin: 20px;
-        }
+      #content {
+        margin: 20px;
+      }
 
-        article {
-            margin-bottom: 20px;
-        }
+      article {
+        margin-bottom: 20px;
+      }
 
-        article h2 {
-            color: #333;
-        }
+      article h2 {
+        color: #000000;
+      }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        h1 {
-            font-family:"Red Hat Display", sans-serif;
-            text-align: center;
-        }
+      footer {
+        background-color: #026937;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Red Hat Display", sans-serif;
+        text-align: center;
+      }
+      #peso {
+        width: 35%;
+        height: auto;
+        justify-content: center;
+        border-radius: 15px;
+      }
+      #shell {
+        width: 35%;
+        height: auto;
+        justify-content: center;
+        border-radius: 15px;
+      }
+header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #026937;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 27px;
+    margin-top: 6px;
+  }
+  #Buscar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 48px;
+    margin-top: 27px;
+    margin-left: 60px;
+    align-items: center;
+    width: 50vw;
+  }
+  #search {
+    margin-bottom: 20px;
+    border: #fff;
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 1%;
+    margin-top: 20px;
+    width: 60vw;
+  }
+  .lupa {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 115px;
+  }
+  nav {
+  grid-area: nav;
+}
+#menu-h {
+  align-items: center;
+}
+
+#menu-h ul {
+  max-width: 800px;
+  list-style: none;
+  padding: 1%;
+  display: flex;
+  list-style: none;
+  margin: 5 auto;
+  justify-content: center;
+}
+
+#menu-h li {
+  margin: 0 10px;
+}
+
+#menu-h a {
+  color: #000000;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 20%;
+}
+
+#menu-h ul li a:hover {
+  background-color: #026937;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: #f2f2f1;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+}
+#carrinho {
+  height: 50px;
+  width: 50px;
+  margin-top: 27px;
+  margin-left: 43px;
+}
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>BOM DIA TIAGO LOPES TELECKEN</h1>
-        <hr>
-        <br>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <a
+        href="index.html">
+        <img src="img/logobranca.png" class="logo" alt="Logo da IFECO Branca" />
+      </a>
+      <div id="Buscar">
+        <input type="text" id="search" placeholder="      O que você procura?">
+        <img src="img/lupa.png" class="lupa" alt="Lupa de Pesquisa" />
+      </div>
+
+      <img src="img/carrinho.png" id="carrinho" alt="Carrinho de Compras">
+
+      <div id="Login">
+      <a href="login.html" id="pessoa">
+            <img src="img/cadastro-branco.png" class="pessoa" alt="Pessoa do Login"><p>Entrar</p>
+            
+      </a>
+      </div>
+
     </header>
+    <div class="flex-container">
+        <nav id="menu-h">
+          <ul class="centro">
+            <li><a href="blog.html">BLOG</a></li>
 
-    <div id="content">
+            <li><a href="#">LOJA</a></li>
+
+            <li><a href="#">CONTATO</a></li>
+
+            <li><a href="sobre.html">CONHEÇA</a></li>
+          </ul>
+        </nav>
+  </div>
+    <main>
+      <div id="content">
         <article>
-            <h2>Título do Artigo</h2>
-            <p>
-                Somos uma equipe de eficiência energética do IFRS aqui de Rio Grande. Desenvolvemos um veículo elétrico para participar de competições de eficiência energética - maratonas onde o veículo que completar a prova utilizando a menor quantidade de energia vence. Tendo em vista a situação atual do planeta em relação aos combustíveis fósseis, nos empenhamos em pensar em novas tecnologias em prol da sustentabilidade. 
-                No ano de 2022, participamos da Shell Eco-marathon Brasil - evento promovido pela Shell no mundo inteiro - que aconteceu no Rio de Janeiro. Neste evento, atingimos a grande marca d
-                e 2° carro elétrico mais eficiente da América Latina. Tudo isso sem nenhum apoio financeiro da instituição ou de patrocinadores. 
-                
+          <h2>ATUALIZAÇÃO DA SEMANA</h2>
+          <img src="img/peso.png" id="peso" />
         </article>
 
         <article>
-            <h2>Outro Título do Artigo</h2>
-            <p>
-                Agora sempre promova produtos de proteína da vida. Todos da massa
-                Ele não teve medo do resultado, nem se preocupou. Mas o futebol seguirá
-                a menos que um lago seja seguido.
-            </p>
+          <h2>DATA DEFINIDA</h2>
+          <img src="img/shell.png " id="shell">
+          <p>
+            A Shell Eco Marathon 2023 teve sua data definida! A prova ocorrerá
+            de 30 de Agosto a 2 de Setembro.
+          </p>
         </article>
-    </div>
-
+      </div>
+    </main>
     <footer>
-        <p>&copy; 2023 IFECO. Todos os direitos reservados.</p>
+      <p>&copy; 2023 IFECO. Todos os direitos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>
