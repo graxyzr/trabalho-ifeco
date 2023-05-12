@@ -122,9 +122,12 @@ nav {
   float: left;
   margin-right: 20px;
   vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 0px;
 }
 
 .carro p {
+  max-width: 100%;
   margin-top: 20px;
   line-height: 45vw;
 }
@@ -185,6 +188,15 @@ h1 {
   margin-top: 27px;
   margin-left: 43px;
 }
+#pessoa p {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  margin-left: 44px;
+  padding: 3px;
+  line-height: 1%;
+  opacity: calc(5);
+}
 footer {
   grid-area: "footer";
   background-color: #026937;
@@ -219,6 +231,6 @@ button{
   color: white;
   border-radius: 5px;
   width: 50vw;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px;
 }
