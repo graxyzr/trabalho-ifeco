@@ -1,68 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Sobre - IFECO</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-      }
-      header {
-  display: flex;
-  grid-area: header;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  background-color: #026937;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-}
-.logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 27px;
-    margin-top: 6px;
-  }
-  #Buscar {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #fff;
-    border-radius: 5px;
-    height: 48px;
-    margin-top: 27px;
-    margin-left: 60px;
-    align-items: center;
-    width: 50vw;
-  }
-  #search {
-    margin-bottom: 20px;
-    border: #fff;
-    border-radius: 5px;
-    height: 20px;
-    margin-right: 1%;
-    margin-top: 20px;
-    width: 60vw;
-  }
-  .lupa {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    margin-left: 115px;
-  }
-    </style>
-  </head>
-
+    <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sobre - IFECO</title>
+      <link rel="stylesheet" href="sobre.css" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
   <body>
-      <div class="container">
         <header>
           <a
             href="index.html">
@@ -77,38 +26,49 @@
     
           <div id="Login">
           <a href="login.html">
-                <img src="img/cadastro-branco.png" class="pessoa" alt="Pessoa do Login"><p>Entrar</p>
+                <img src="img/cadastro-branco.png" class="pessoa" alt="Pessoa do Login"><p>CADASTRE-SE</p>
                 
           </a>
-          </div>
-    
+      
         </header>
+        <div class="flex-container">
+          <nav id="menu-h">
+            <ul class="centro">
+              <li><a href="blog.html">BLOG</a></li>
+  
+              <li><a href="index.html">LOJA</a></li>
+  
+              <li><a href="areas.html">ÁREAS</a></li>
+  
+              <li><a href="sobre.html">CONHEÇA</a></li>
+            </ul>
+          </nav>
+        </div>
+    <br>
     <main>
       <section>
         <h2>QUEM SOMOS</h2>
         <p>
-          Somos uma equipe de eficiência energética do IFRS aqui de Rio Grande.
+          Somos uma equipe de eficiência energética do IFRS - Campus Rio Grande.
         </p>
+        <hr>
+        <br>
         <img
           src="img/equipeifeco.png"
           alt="Equipe da IFECO"
           class="equipeifeco"
         />
       </section>
-      <br />
-      <br />
       <section>
         <h2>NOSSA MISSÃO</h2>
         <p>Nossa missão é melhorar a vida das pessoas através da tecnologia.</p>
+        <hr>
+        <figure class="youtube-figure">
+          <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/MBjD3pKazug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </figure>
       </section>
       <br />
       <br />
-      <section>
-        <h2>CONTATO</h2>
-        <p>
-          Você pode entrar em contato conosco pelo email: equipeifeco@gmail.com ou pelas nossas redes sociais: @ifeco.ifrs
-        </p>
-      </section>
     </main>
     <footer>
       <p>Entre em contato:</p>
