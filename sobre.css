@@ -46,10 +46,10 @@ header {
   width: 60vw;
 }
 .lupa {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
-  margin-left: 115px;
+  margin-right: 12px;
 }
 nav {
   grid-area: nav;
@@ -102,19 +102,10 @@ nav {
   margin-left: 43px;
 }
 .pessoa {
-  width: 50px;
-  height: 50px;
-  margin-top: 27px;
+  width: 45px;
+  height: 45px;
+  margin-top: 25px;
   margin-left: 43px;
-}
-#pessoa p {
-  color: #fff;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  margin-left: 44px;
-  padding: 3px;
-  line-height: 1%;
-  opacity: calc(5);
 }
 body {
   font-family: Arial, sans-serif;
@@ -132,8 +123,8 @@ section {
   text-align: center;
 }
 .equipeifeco {
-  max-width: 112%;
-  height: 40%;
+  max-width: 55%;
+  height: 60%;
   border-radius: 10px;
 }
 .flex-container {
@@ -148,7 +139,7 @@ section {
 }
 .youtube-video {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
 }
 h2 p {
