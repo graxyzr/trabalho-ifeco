@@ -242,3 +242,16 @@ figure{
     margin-right: auto;
   }
 }
+
+h2 {
+  text-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+  text-decoration: underline;
+}
+
+hr {
+  color: #026937;
+}
+
+figcaption {
+  font-family: "Red Hat Display", sans-serif;
+}
