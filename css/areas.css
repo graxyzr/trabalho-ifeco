@@ -167,3 +167,55 @@ header {
   font-style: inherit;
   font-weight: bold;
   }
+  .main-list {
+    font-family: Arial, sans-serif;
+    color: #333;
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  .sub-list {
+    font-style: italic;
+    color: rgb(77, 77, 77);
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  .sub-list li {
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+  
+    #Buscar {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #search {
+      width: 100%;
+    }
+  
+    #menu-h a {
+      margin-left: 10px;
+    }
+  
+    #carrinho,
+    .pessoa {
+      margin-left: 10px;
+    }
+  
+    #pessoa p {
+      margin-left: 10px;
+    }
+  }
+  
+  
