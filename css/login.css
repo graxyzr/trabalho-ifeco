@@ -1,7 +1,8 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
   }
 
   /* Estilos do header */
@@ -44,10 +45,10 @@
       width: 60vw;
     }
     .lupa {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       border-radius: 5px;
-      margin-left: 115px;
+      margin-right: 12px;
     }
   nav {
     grid-area: nav;
@@ -92,6 +93,7 @@
     justify-content: center;
     font-style: inherit;
     font-weight: bold;
+    background-color: #fff;
   }
   #carrinho {
     height: 50px;
@@ -100,9 +102,9 @@
     margin-left: 43px;
   }
   .pessoa {
-    width: 50px;
-    height: 50px;
-    margin-top: 27px;
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
     margin-left: 43px;
   }
   #pessoa p {
@@ -127,13 +129,17 @@
   form {
     width: 400px;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 2px solid #026937;
+    box-shadow: #333;
     border-radius: 4px;
+    box-shadow: 4px 4px 4px #555555;
     background-color: #fff;
   }
 
   fieldset {
-    margin-bottom: 20px;
+    border: 1px solid#026937;
+    padding: 10px;
+    justify-content: center;
   }
 
   legend {
@@ -144,14 +150,16 @@
   label {
     display: block;
     margin-bottom: 5px;
+    padding: 5px;
   }
 
   input {
     width: 100%;
-    padding: 5px;
     border: 1px solid #555554;
     border-radius: 4px;
     margin-bottom: 10px;
+    margin-left: 5px;
+
   }
 
   input[type="submit"] {
@@ -160,6 +168,9 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   /* Estilos do footer */
@@ -185,5 +196,37 @@
     font-weight: bold;
   }
   legend{
-    padding: 5px;
+    text-align: center;
   }
+  /* Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #Buscar {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .product {
+    margin: 10px;
+  }
+}
