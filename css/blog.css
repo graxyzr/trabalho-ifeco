@@ -194,3 +194,51 @@ figure{
   flex-wrap: nowrap;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  #Buscar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  #menu-h a {
+    margin-left: 10px;
+  }
+
+  #carrinho,
+  .pessoa {
+    margin-left: 10px;
+  }
+
+  #pessoa p {
+    margin-left: 10px;
+  }
+
+  #peso,
+  #shell {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  #text,
+  #texto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
