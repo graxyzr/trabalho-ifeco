@@ -1,3 +1,13 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer";
+  
+}
+
 header {
     display: flex;
     grid-area: header;
@@ -37,10 +47,10 @@ header {
       width: 60vw;
     }
     .lupa {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       border-radius: 5px;
-      margin-left: 115px;
+      margin-right: 12px;
     }
   nav {
     grid-area: nav;
@@ -85,6 +95,7 @@ header {
     justify-content: center;
     font-style: inherit;
     font-weight: bold;
+    background-color: #fff;
   }
   #carrinho {
     height: 50px;
@@ -93,9 +104,9 @@ header {
     margin-left: 43px;
   }
   .pessoa {
-    width: 50px;
-    height: 50px;
-    margin-top: 27px;
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
     margin-left: 43px;
   }
   #pessoa p {
@@ -112,6 +123,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    grid-area: "footer";
   }
   
   footer a {
@@ -139,11 +151,11 @@ header {
   th,
   td {
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #026937;
   }
   
   th {
-    background-color: #f2f2f2;
+    color: #026937;
   }
   
   tfoot {
