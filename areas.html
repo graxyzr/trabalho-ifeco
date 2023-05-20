@@ -1,133 +1,246 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFECO - Site Oficial</title>
-  <link rel="stylesheet" href="css/areas.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-        <a
-          href="index.html">
-          <img src="img/logobranca.png" class="logo" alt="Logo da IFECO Branca" />
-        </a>
-        <div id="Buscar">
-          <input type="text" id="search" placeholder="      O que você procura?">
-          <img src="img/lupa.png" class="lupa" alt="Lupa de Pesquisa" />
-        </div>
-  
-        <img src="img/carrinho.png" id="carrinho" alt="Carrinho de Compras">
-  
-        <div id="Login">
-        <a href="login.html" id="pessoa">
-              <img src="img/cadastro-branco.png" class="pessoa" alt="Pessoa do Login"><p>CADASTRE-SE</p>
-        </a>
-        </div>
-    </header>
-    <div class="flex-container">
-        <nav id="menu-h">
-          <ul class="centro">
-            <li><a href="blog.html">BLOG</a></li>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
 
-            <li><a href="index.html">LOJA</a></li>
+/* Estilos do header */
+header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #026937;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 
-            <li><a href="areas.html">ÁREAS</a></li>
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 27px;
+  margin-top: 6px;
+}
 
-            <li><a href="sobre.html">CONHEÇA</a></li>
-          </ul>
-        </nav>
-  </div>
-  <br><br><br>
+#Buscar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 48px;
+  margin-top: 27px;
+  margin-left: 60px;
+  align-items: center;
+  width: 50vw;
+}
 
-    <main>
-        <table>
-            <thead>
-              <tr>
-                <th>ÁREA</th>
-                <th>NOMES</th>
-                <th>NÚMERO DE MATRÍCULA</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>MARKETING</td>
-                <td>PH</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>MECÂNICA</td>
-                <td>Cristiano e Joana</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>ELETRÔNICA</td>
-                <td>Igor, Maicon e Cristiane</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>PROJETO</td>
-                <td>Karine e Douglas</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>CAPITÃO</td>
-                <td>Douglas</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>PILOTO</td>
-                <td>Paula</td>
-                <td>XXXXXXXX</td>
-              </tr>
-              <tr>
-                <td>COORDENADOR</td>
-                <td>Serguei</td>
-                <td>XXXXXXXX</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3">Total de Áreas: 7</td>
-              </tr>
-            </tfoot>
-          </table>
-          <br>
-          <ul class="main-list">
-            <li>Lista de Espera para entrevista:
-              <ul class="sub-list">
-                <li>1. Tiago Lopes Telecken</li>
-                <li>2. Greice Barbosa</li>
-                <li>3. Mauro Jamal</li>
-                <li>4. Cristiano Ronaldo</li>
-                <li>5. Rafael dos Santos Nogueira</li>
-                <li>6. Naldo Benny</li>
-                <li>7. Lebron James</li>
-                <li>8. Raquel de Miranda Barbosa</li>
-                <li>9. Eduardo Wenzel Brião</li>
-            </li>
-          </ul>
-          
-          
-        </main>
-    <br><br><br><br>
-    <footer>
-        <p>Entre em contato:</p>
-        <p><i class="fa fa-envelope"></i> equipeifeco@gmail.com</p>
-        <p><i class="fa fa-phone"></i> (53) 99129-1699</p>
-        <p><a href="https://goo.gl/maps/CL4KbvxQzXVfpD8f8"><i class="fa fa-map-marker"></i></a> Av. Alfredo Huch, 475, Pavilhão 11, Sala 1121 (Rio Grande - RS)</p>
-        <p>
-          <a href="https://www.facebook.com/ifeco.ifrs/"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/ifeco.ifrs/"><i class="fa fa-instagram"></i></a>
-        </p>
-        <br>
-        <p>&copy; 2023 IFECO. Todos os direitos reservados.</p>
-    </footer> 
-  </div>    
-</body>
+#search {
+  margin-bottom: 20px;
+  border: #fff;
+  border-radius: 5px;
+  height: 20px;
+  margin-right: 1%;
+  margin-top: 20px;
+  width: 60vw;
+}
+
+.lupa {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#menu-h {
+  align-items: center;
+}
+
+#menu-h ul {
+  max-width: 800px;
+  list-style: none;
+  padding: 1%;
+  display: flex;
+  list-style: none;
+  margin: 5 auto;
+  justify-content: center;
+}
+
+#menu-h li {
+  margin: 0 10px;
+}
+
+#menu-h a {
+  color: #000000;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 20%;
+}
+
+#menu-h ul li a:hover {
+  background-color: #026937;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: #f2f2f1;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#carrinho {
+  height: 50px;
+  width: 50px;
+  margin-top: 27px;
+  margin-left: 43px;
+}
+
+.pessoa {
+  width: 45px;
+  height: 45px;
+  margin-top: 25px;
+  margin-left: 43px;
+}
+
+#pessoa p {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  margin-left: 44px;
+  padding: 3px;
+  line-height: 1%;
+  opacity: calc(5);
+}
+
+/* Estilos do main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 180px);
+  /* Considerando o header e footer */
+  background-color: #f2f2f1;
+}
+
+form {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #026937;
+  box-shadow: #333;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #555555;
+  background-color: #fff;
+}
+
+fieldset {
+  border: 1px solid#026937;
+  padding: 10px;
+  justify-content: center;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #555554;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+}
+
+input[type="submit"] {
+  background-color: #026937;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #026937;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+}
+
+legend {
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+  /* Adjust styles for smaller screens */
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #Buscar {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .product {
+    margin: 10px;
+  }
+}
