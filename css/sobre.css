@@ -196,33 +196,33 @@ footer i {
 
 @media screen and (max-width: 768px) {
   /* Adjust styles for smaller screens */
-  
+
   .logo {
     margin-left: 10px;
     margin-top: 10px;
   }
-  
+
   #Buscar {
     margin: 10px;
     width: 90%;
   }
-  
+
   #search {
     width: 90%;
   }
-  
+
   #menu-h {
     display: none;
   }
-  
+
   .pessoa {
     margin-left: 10px;
   }
-  
+
   .youtube-video {
     height: 250px;
   }
-  
+
   h2 p {
     padding: 5%;
   }
