@@ -1,206 +1,220 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Red Hat Display", sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
 
-  /* Estilos do header */
-  header {
-    display: flex;
-    grid-area: header;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #026937;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  .logo {
-      width: 90px;
-      height: 90px;
-      margin-left: 27px;
-      margin-top: 6px;
-    }
-    #Buscar {
-      display: flex;
-      flex-wrap: nowrap;
-      background-color: #fff;
-      border-radius: 5px;
-      height: 48px;
-      margin-top: 27px;
-      margin-left: 60px;
-      align-items: center;
-      width: 50vw;
-    }
-    #search {
-      margin-bottom: 20px;
-      border: #fff;
-      border-radius: 5px;
-      height: 20px;
-      margin-right: 1%;
-      margin-top: 20px;
-      width: 60vw;
-    }
-    .lupa {
-      width: 30px;
-      height: 30px;
-      border-radius: 5px;
-      margin-right: 12px;
-    }
-  nav {
-    grid-area: nav;
-  }
-  #menu-h {
-    align-items: center;
-  }
+/* Estilos do header */
+header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #026937;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 
-  #menu-h ul {
-    max-width: 800px;
-    list-style: none;
-    padding: 1%;
-    display: flex;
-    list-style: none;
-    margin: 5 auto;
-    justify-content: center;
-  }
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 27px;
+  margin-top: 6px;
+}
 
-  #menu-h li {
-    margin: 0 10px;
-  }
+#Buscar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 48px;
+  margin-top: 27px;
+  margin-left: 60px;
+  align-items: center;
+  width: 50vw;
+}
 
-  #menu-h a {
-    color: #000000;
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: "Red Hat Display", sans-serif;
-    margin-left: 20%;
-  }
+#search {
+  margin-bottom: 20px;
+  border: #fff;
+  border-radius: 5px;
+  height: 20px;
+  margin-right: 1%;
+  margin-top: 20px;
+  width: 60vw;
+}
 
-  #menu-h ul li a:hover {
-    background-color: #026937;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    color: #f2f2f1;
-    border-radius: 10px;
-  }
+.lupa {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
 
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    font-style: inherit;
-    font-weight: bold;
-    background-color: #fff;
-  }
-  #carrinho {
-    height: 50px;
-    width: 50px;
-    margin-top: 27px;
-    margin-left: 43px;
-  }
-  .pessoa {
-    width: 45px;
-    height: 45px;
-    margin-top: 25px;
-    margin-left: 43px;
-  }
-  #pessoa p {
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    margin-left: 44px;
-    padding: 3px;
-    line-height: 1%;
-    opacity: calc(5);
-  }
+nav {
+  grid-area: nav;
+}
 
-  /* Estilos do main */
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 180px); /* Considerando o header e footer */
-    background-color: #f2f2f1;
-  }
+#menu-h {
+  align-items: center;
+}
 
-  form {
-    width: 400px;
-    padding: 20px;
-    border: 2px solid #026937;
-    box-shadow: #333;
-    border-radius: 4px;
-    box-shadow: 4px 4px 4px #555555;
-    background-color: #fff;
-  }
+#menu-h ul {
+  max-width: 800px;
+  list-style: none;
+  padding: 1%;
+  display: flex;
+  list-style: none;
+  margin: 5 auto;
+  justify-content: center;
+}
 
-  fieldset {
-    border: 1px solid#026937;
-    padding: 10px;
-    justify-content: center;
-  }
+#menu-h li {
+  margin: 0 10px;
+}
 
-  legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+#menu-h a {
+  color: #000000;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 20%;
+}
 
-  label {
-    display: block;
-    margin-bottom: 5px;
-    padding: 5px;
-  }
+#menu-h ul li a:hover {
+  background-color: #026937;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: #f2f2f1;
+  border-radius: 10px;
+}
 
-  input {
-    width: 100%;
-    border: 1px solid #555554;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+  background-color: #fff;
+}
 
-  }
+#carrinho {
+  height: 50px;
+  width: 50px;
+  margin-top: 27px;
+  margin-left: 43px;
+}
 
-  input[type="submit"] {
-    background-color: #026937;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
+.pessoa {
+  width: 45px;
+  height: 45px;
+  margin-top: 25px;
+  margin-left: 43px;
+}
 
-  /* Estilos do footer */
-  footer {
-    background-color: #026937;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+#pessoa p {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  margin-left: 44px;
+  padding: 3px;
+  line-height: 1%;
+  opacity: calc(5);
+}
 
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
+/* Estilos do main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 180px);
+  /* Considerando o header e footer */
+  background-color: #f2f2f1;
+}
 
-  footer i {
-    margin-right: 5px;
-  }
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    font-style: inherit;
-    font-weight: bold;
-  }
-  legend{
-    text-align: center;
-  }
-  /* Media Queries */
+form {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #026937;
+  box-shadow: #333;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #555555;
+  background-color: #fff;
+}
+
+fieldset {
+  border: 1px solid#026937;
+  padding: 10px;
+  justify-content: center;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #555554;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+}
+
+input[type="submit"] {
+  background-color: #026937;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #026937;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+}
+
+legend {
+  text-align: center;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
+
   /* Adjust styles for smaller screens */
   header {
     flex-direction: column;
