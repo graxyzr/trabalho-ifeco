@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
@@ -52,6 +52,7 @@ header {
   align-items: center;
   width: 50vw;
 }
+
 #search {
   margin-bottom: 20px;
   border: #fff;
@@ -266,6 +267,7 @@ button {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+
   /* Adjust styles for smaller screens */
   header {
     flex-direction: column;
@@ -295,4 +297,3 @@ button {
     margin: 10px;
   }
 }
-
