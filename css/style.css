@@ -147,6 +147,8 @@ nav {
 hr {
   margin-top: 20px;
   margin-left: 15;
+  box-shadow: 4px 4px 4px #555555;
+
 }
 
 h1 {
