@@ -296,3 +296,33 @@ button {
     margin: 10px;
   }
 }
+@media screen and (max-width: 1029px) {
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #Buscar {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .product {
+    margin: 10px;
+  }
+}
