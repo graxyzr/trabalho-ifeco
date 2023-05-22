@@ -267,33 +267,35 @@ button {
 
 
 @media screen and (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-  }
-
-  .logo {
-    margin-left: 0;
-    margin-top: 10px;
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
   }
 
   #Buscar {
-    margin: 10px;
-    width: 90%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #search {
-    width: 90%;
+    width: 100%;
   }
 
-  .carro {
-    width: 90%;
-    margin: 10px auto;
-    float: none;
+  #menu-h a {
+    margin-left: 10px;
   }
 
-  .product {
-    margin: 10px;
+  #carrinho,
+  .pessoa {
+    margin-left: 10px;
+  }
+
+  #pessoa p {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 1029px) {
