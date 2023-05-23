@@ -1,7 +1,17 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
 body {
@@ -72,7 +82,7 @@ nav {
   padding: 1%;
   display: flex;
   list-style: none;
-  margin: 5 auto;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -130,6 +140,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+figcaption {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+
 }
 
 section {
@@ -192,13 +209,15 @@ footer i {
   margin-right: 5px;
 }
 
-/* Media Queries */
-
 @media screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens */
+
+
+  header {
+    flex-direction: column;
+  }
 
   .logo {
-    margin-left: 10px;
+    margin-left: 0;
     margin-top: 10px;
   }
 
@@ -211,19 +230,25 @@ footer i {
     width: 90%;
   }
 
-  #menu-h {
-    display: none;
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
   }
 
+  .product {
+    margin: 10px;
+  }
+
+  #carrinho,
   .pessoa {
     margin-left: 10px;
+    margin-bottom: 20px;
   }
 
-  .youtube-video {
-    height: 250px;
-  }
-
-  h2 p {
-    padding: 5%;
+  #pessoa p {
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
 }
+
