@@ -71,7 +71,7 @@ nav {
   padding: 1%;
   display: flex;
   list-style: none;
-  margin: 5 auto;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -146,6 +146,7 @@ footer i {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
@@ -202,34 +203,44 @@ tfoot {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   #Buscar {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
+    width: 90%;
   }
 
   #search {
-    width: 100%;
+    width: 90%;
   }
 
-  #menu-h a {
-    margin-left: 10px;
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .product {
+    margin: 10px;
   }
 
   #carrinho,
   .pessoa {
     margin-left: 10px;
+    margin-bottom: 20px; /* Adicione esta propriedade */
   }
 
   #pessoa p {
     margin-left: 10px;
+    margin-bottom: 20px; /* Adicione esta propriedade */
   }
 }
