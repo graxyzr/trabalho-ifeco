@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
@@ -81,7 +82,7 @@ nav {
   padding: 1%;
   display: flex;
   list-style: none;
-  margin: 5 auto;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -207,56 +208,6 @@ figure {
   flex-wrap: nowrap;
   justify-content: center;
 }
-
-@media screen and (max-width: 768px) {
-  .container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-  }
-
-  #Buscar {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #search {
-    width: 100%;
-  }
-
-  #menu-h a {
-    margin-left: 10px;
-  }
-
-  #carrinho,
-  .pessoa {
-    margin-left: 10px;
-  }
-
-  #pessoa p {
-    margin-left: 10px;
-  }
-
-  #peso,
-  #shell {
-    width: 90%;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-
-  #text,
-  #texto {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 h2 {
   text-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
   text-decoration: underline;
@@ -269,3 +220,56 @@ hr {
 figcaption {
   font-family: "Red Hat Display", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #Buscar {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+    position: relative
+  }
+
+  .product {
+    margin: 10px;
+  }
+
+  #carrinho,
+  .pessoa {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  #pessoa p {
+    margin-left: 10px;
+    margin-bottom: 20px; 
+  }
+  .carro p {
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
