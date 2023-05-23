@@ -4,8 +4,15 @@
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
 }
-
-/* Estilos do header */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+                             
 header {
   display: flex;
   grid-area: header;
@@ -69,7 +76,7 @@ nav {
   padding: 1%;
   display: flex;
   list-style: none;
-  margin: 5 auto;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -126,13 +133,12 @@ nav {
   opacity: calc(5);
 }
 
-/* Estilos do main */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 180px);
-  /* Considerando o header e footer */
+
   background-color: #f2f2f1;
 }
 
@@ -140,7 +146,6 @@ form {
   width: 400px;
   padding: 20px;
   border: 2px solid #026937;
-  box-shadow: #333;
   border-radius: 4px;
   box-shadow: 4px 4px 4px #555555;
   background-color: #fff;
@@ -183,7 +188,7 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-/* Estilos do footer */
+
 footer {
   background-color: #026937;
   color: #fff;
@@ -211,11 +216,10 @@ legend {
   text-align: center;
 }
 
-/* Media Queries */
 
 @media screen and (max-width: 768px) {
 
-  /* Adjust styles for smaller screens */
+
   header {
     flex-direction: column;
   }
@@ -242,5 +246,16 @@ legend {
 
   .product {
     margin: 10px;
+  }
+
+  #carrinho,
+  .pessoa {
+    margin-left: 10px;
+    margin-bottom: 20px; 
+  }
+
+  #pessoa p {
+    margin-left: 10px;
+    margin-bottom: 20px; 
   }
 }
