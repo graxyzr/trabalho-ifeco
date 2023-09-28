@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #f2f2f1;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #026937;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-left: 27px;
+  margin-top: 6px;
+}
+
+#Buscar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 48px;
+  margin-top: 27px;
+  margin-left: 60px;
+  align-items: center;
+  width: 50vw;
+}
+
+#search {
+  margin-bottom: 20px;
+  border: #fff;
+  border-radius: 5px;
+  height: 20px;
+  margin-right: 1%;
+  margin-top: 20px;
+  width: 60vw;
+}
+
+.lupa {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#menu-h {
+  align-items: center;
+}
+
+#menu-h ul {
+  max-width: 800px;
+  list-style: none;
+  padding: 1%;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#menu-h li {
+  margin: 0 10px;
+}
+
+#menu-h a {
+  color: #000000;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  margin-left: 20%;
+}
+
+#menu-h ul li a:hover {
+  background-color: #026937;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: #f2f2f1;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#carrinho {
+  height: 50px;
+  width: 50px;
+  margin-top: 27px;
+  margin-left: 43px;
+}
+
+.pessoa {
+  width: 45px;
+  height: 45px;
+  margin-top: 25px;
+  margin-left: 43px;
+}
+
+#pessoa p {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  margin-left: 44px;
+  padding: 3px;
+  line-height: 1%;
+  opacity: calc(5);
+}
+
+footer {
+  grid-area: "footer";
+  background-color: #026937;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+#peso,
+#shell {
+  width: 35vw;
+  height: 400px;
+  border-bottom: #000000;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  float: left;
+  margin-right: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+#text,
+#texto {
+  display: flex;
+  justify-content: center;
+  background-color: #026937;
+  text-align: start;
+  color: white;
+  border-radius: 5px;
+  width: 50vw;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+figcaption {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+section {
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+h2 {
+  text-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+  text-decoration: underline;
+}
+
+hr {
+  color: #026937;
+}
+
+figcaption {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #Buscar {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  .carro {
+    width: 90%;
+    margin: 10px auto;
+    float: none;
+    position: relative
+  }
+
+  .product {
+    margin: 10px;
+  }
+
+  #carrinho,
+  .pessoa {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  #pessoa p {
+    margin-left: 10px;
+    margin-bottom: 20px; 
+  }
+  .carro p {
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
